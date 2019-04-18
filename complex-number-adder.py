@@ -21,9 +21,20 @@ def add_complex_numbers(real_num1, imaginary_num1, real_num2, imaginary_num2):
     result = complex(real_sum, imag_sum)
     return result
 
+def inversion(number):
+    mul_inv = 1 / number        
+    return mul_inv
+
+def negation(number):
+    negated = -number
+    return negated
+
+def multiplication(first_number, second_number):
+    mul = first_number * second_number
+    return mul
 
 def main():
-    print("teting")
+    print("testing")
     print("The result is: ", add_complex_numbers(2, 2, 3, 3))
 
 
