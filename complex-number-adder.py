@@ -63,3 +63,4 @@ def operation():
 
         else:
             on = False
+operation()
