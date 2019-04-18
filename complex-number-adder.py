@@ -80,6 +80,14 @@ def operation():
             on = False
 
 
+def main():
+    operation()
 
 
-operation()
+if __name__ == '__main__':
+
+    main()
+
+
+
+
