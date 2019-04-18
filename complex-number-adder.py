@@ -11,5 +11,9 @@ def subtraction(a1,b1,a2,b2):
     c2 = complex(a2, b2)
     difference = c1-c2
     return  difference
-
+def division(a1,b1,a2,b2):
+    c1 = complex(a1,b1)
+    c2 = complex(a2, b2)
+    quet = c1-c2
+    return  quet
 
