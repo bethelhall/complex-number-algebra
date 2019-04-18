@@ -23,3 +23,43 @@ def getinput():
     print("Imaginary:")
     b1 = float(input())
     return a1,b1
+def operation():
+    print("1:Addition")
+    print("2:subtraction")
+    print("3:Multiplication")
+    print("4:Division")
+    print("5:Inversion")
+    print("6:Negation")
+    print("press any key for exit")
+
+    on = True
+    while on:
+        op = input()
+        op = int(op)
+        if op==1:
+            a1,b1 = getinput()
+            a2, b2 = getinput()
+            print("sum ="+str(addition(a1,b1,a2,b2)))
+        elif  op==2:
+            a1, b1 = getinput()
+            a2, b2 = getinput()
+            print("Difference ="+str(subtraction(a1,b1,a2,b2)))
+        elif  op==3:
+            a1, b1 = getinput()
+            a2, b2 = getinput()
+            print("product ="+str(multiplication(a1,b1,a2,b2)))
+        elif op==4:
+            a1, b1 = getinput()
+            a2, b2 = getinput()
+            print("quetient ="+str(devision(a1, b1, a2, b2)))
+
+        elif op==5:
+            a1,b1 = getinput()
+            print("inversion ="+str(inversion(a1, b1)))
+
+        elif op==6:
+            a1, b1 = getinput()
+            print("Negation ="+str(negation(a1,b1)))
+
+        else:
+            on = False
