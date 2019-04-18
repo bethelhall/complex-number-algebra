@@ -17,3 +17,9 @@ def division(a1,b1,a2,b2):
     quet = c1-c2
     return  quet
 
+def getinput():
+    print("Real:")
+    a1 = float(input())
+    print("Imaginary:")
+    b1 = float(input())
+    return a1,b1
