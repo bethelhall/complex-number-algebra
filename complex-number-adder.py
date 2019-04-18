@@ -16,7 +16,21 @@ def division(a1,b1,a2,b2):
     c2 = complex(a2, b2)
     quet = c1-c2
     return  quet
+def inversion(a1,b1):
+    number = complex(a1,b1)
+    mul_inv = 1 / number        
+    return mul_inv
 
+def negation(a1,b1):
+    number = complex(a1,b1)
+    negated = -number
+    return negated
+
+def multiplication(a1,b1,a2,b2):
+    first_number = complex(a1,b1)
+    second_number = complex(a2, b2)
+    mul = first_number * second_number
+    return mul
 def getinput():
     print("Real:")
     a1 = float(input())
@@ -39,7 +53,7 @@ def operation():
         if op==1:
             a1,b1 = getinput()
             a2, b2 = getinput()
-            print("sum ="+str(addition(a1,b1,a2,b2)))
+            print("sum ="+str(add_complex_numbers(a1,b1,a2,b2)))
         elif  op==2:
             a1, b1 = getinput()
             a2, b2 = getinput()
@@ -51,7 +65,7 @@ def operation():
         elif op==4:
             a1, b1 = getinput()
             a2, b2 = getinput()
-            print("quetient ="+str(devision(a1, b1, a2, b2)))
+            print("quetient ="+str(division(a1, b1, a2, b2)))
 
         elif op==5:
             a1,b1 = getinput()
@@ -61,6 +75,11 @@ def operation():
             a1, b1 = getinput()
             print("Negation ="+str(negation(a1,b1)))
 
+
         else:
             on = False
+
+
+
+
 operation()
